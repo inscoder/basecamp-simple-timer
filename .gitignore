@@ -1,0 +1,21 @@
+.DS_Store
+
+worker/wrangler.jsonc
+worker/wrangler.*.jsonc
+!worker/wrangler.example.jsonc
+
+extension/config.js
+extension/config.*.js
+!extension/config.example.js
+
+worker/.dev.vars
+worker/.dev.vars.*
+!worker/.dev.vars.example
+.env
+.env.*
+node_modules/
+.wrangler/
+
+# Local extension packages
+*.zip
+Basecamp Simple Timer/

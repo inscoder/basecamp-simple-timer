@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "check": "node --check extension/background.js && node --check extension/popup.js && node --check worker/src/index.mjs && node test/manifest.test.mjs && node test/popup.test.mjs && node worker/test.mjs && node test/background.test.mjs",
+    "worker:dev": "npx wrangler dev --config worker/wrangler.jsonc",
+    "worker:dry-run": "npx wrangler deploy --dry-run --config worker/wrangler.jsonc",
+    "worker:deploy": "npx wrangler deploy --config worker/wrangler.jsonc",
+    "worker:d1:apply": "npx wrangler d1 execute basecamp_simple_timer --remote --file worker/schema.sql --config worker/wrangler.jsonc",
+    "worker:prod:dry-run": "npx wrangler deploy --dry-run --config worker/wrangler.production.jsonc",
+    "worker:prod:deploy": "npx wrangler deploy --config worker/wrangler.production.jsonc",
+    "worker:prod:d1:apply": "npx wrangler d1 execute basecamp_simple_timer --remote --file worker/schema.sql --config worker/wrangler.production.jsonc",
+    "worker:prod:secret:basecamp": "npx wrangler secret put BASECAMP_CLIENT_SECRET --config worker/wrangler.production.jsonc",
+    "worker:prod:secret:encryption": "npx wrangler secret put TOKEN_ENCRYPTION_KEY --config worker/wrangler.production.jsonc",
+    "worker:prod:secret:admin": "npx wrangler secret put ADMIN_TOKEN --config worker/wrangler.production.jsonc"
+  },
+  "devDependencies": {}
+}

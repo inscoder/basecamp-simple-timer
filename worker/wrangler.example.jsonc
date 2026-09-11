@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "basecamp-simple-timer-api",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-05-29",
+  "vars": {
+    "BACKEND_BASE_URL": "https://YOUR_WORKER_DOMAIN",
+    "BASECAMP_CLIENT_ID": "YOUR_BASECAMP_CLIENT_ID",
+    "APP_USER_AGENT": "Basecamp Simple Timer (you@example.com)",
+    "TEAM_EMAIL_DOMAIN": "",
+    "ALLOWED_BASECAMP_ACCOUNT_IDS": "",
+    "ALLOWED_EXTENSION_REDIRECT_ORIGIN": "https://YOUR_EXTENSION_ID.chromiumapp.org"
+  },
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false,
+      "persist": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "basecamp_simple_timer",
+      "database_id": "YOUR_D1_DATABASE_ID"
+    }
+  ]
+}

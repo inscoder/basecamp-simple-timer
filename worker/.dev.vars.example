@@ -1,0 +1,3 @@
+BASECAMP_CLIENT_SECRET="replace-with-basecamp-client-secret"
+TOKEN_ENCRYPTION_KEY="replace-with-a-long-random-string"
+ADMIN_TOKEN="replace-with-a-long-random-admin-token"
