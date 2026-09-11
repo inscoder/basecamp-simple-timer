@@ -29,6 +29,21 @@ To enable the **Log** button, follow the [self-hosting setup guide](docs/SETUP.m
 | Log time | After connecting Basecamp, click **Log** and confirm an optional note. The entry uses today's local date; the timer is removed after successful logging. |
 | Delete timer | Click the trash icon to remove the local timer. |
 
+### Keyboard Shortcuts
+
+- `Cmd` + `Shift` + `E`: Open or close the extension popup on macOS (`Alt` + `Shift` + `E` on Windows/Linux).
+
+With the popup open:
+
+- `a`: Start/add timer
+- `s`: Save/log selected timer
+- `Space`: Play/pause selected timer
+- `d`: Delete selected timer
+- `q`: Close popup
+- `Enter`: Jump to selected task in Basecamp
+- `Arrow Up` / `Arrow Down`: Move selection
+- `Tab` / `Shift` + `Tab`: Move selection
+
 ## Supported Pages and Limitations
 
 Timers support Basecamp to-dos, cards, messages, documents, and schedule entries on `3.basecamp.com` and `app.basecamp.com`.
